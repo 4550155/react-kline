@@ -31,7 +31,12 @@ class ReactKline extends React.Component {
         this.state.kline = new Kline(cfg);
         this.state.kline.draw();
     }
-
+    
+    componentWillReceiveProps(newprops){
+        this.state.kline.setSymbol(newprops.symbol,newprops.symbolName);
+        this.state.kline.setLanguage(newprops.lang);
+    }
+    
     resize(w,h){
         this.state.kline.resize(w, h);
     }
