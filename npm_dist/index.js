@@ -61,6 +61,13 @@ var ReactKline = function (_React$Component) {
             this.state.kline.draw();
         }
     }, {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(newprops) {
+            console.log("componentWillReceiveProps",newprops);
+            this.state.kline.setSymbol(newprops.symbol,newprops.symbolName);
+            this.state.kline.setLanguage(newprops.lang);
+        }
+    }, {
         key: 'resize',
         value: function resize(w, h) {
             this.state.kline.resize(w, h);

@@ -33,7 +33,7 @@ class ReactKline extends React.Component {
     }
     
     componentWillReceiveProps(newprops){
-        console.log(newprops);
+        console.log("componentWillReceiveProps",newprops);
         this.state.kline.setSymbol(newprops.symbol,newprops.symbolName);
         this.state.kline.setLanguage(newprops.lang);
     }
