@@ -65,6 +65,7 @@ var ReactKline = function (_React$Component) {
         value: function componentWillReceiveProps(newprops) {
             if(this.props.symbolName!=newprops.symbolName){
                 this.state.kline.setSymbol(newprops.symbol,newprops.symbolName);
+                this.state.kline.setLanguage(newprops.language);
             }
         }
     }, {
