@@ -71,7 +71,7 @@ var ChartSettings = exports.ChartSettings = function () {
             var _chart_style = 'CandleStick';
             var _m_indic = 'MA';
             var _indic = ['VOLUME', 'VOLUME'];
-            var _range = '15m';
+            var _range = '1d';
             var _frame = {};
             _frame.chartStyle = _chart_style;
             _frame.mIndic = _m_indic;
