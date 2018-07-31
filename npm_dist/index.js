@@ -67,6 +67,10 @@ var ReactKline = function (_React$Component) {
                 this.state.kline.setSymbol(newprops.symbol,newprops.symbolName);
                 this.state.kline.setLanguage(newprops.language);
             }
+
+            if(this.props.locale!=newprops.locale){
+                this.state.kline.setLanguage(newprops.language);
+            }
         }
     }, {
         key: 'resize',
